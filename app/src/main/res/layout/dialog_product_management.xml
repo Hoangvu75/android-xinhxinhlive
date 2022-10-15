@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/darkThree"
+        android:gravity="center|start">
+        <TextView
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/tvBackButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="19dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_back_arrow"/>
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tvBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Quản lý sản phẩm"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnCreateProduct"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Tạo SP"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@color/watermelon"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_add_24"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:layout_margin="5dp"/>-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCreateProduct"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/watermelon"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TẠO SP"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_baseline_add_24"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_category_name"
+        tools:itemCount="2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_product"/>
+
+</LinearLayout>

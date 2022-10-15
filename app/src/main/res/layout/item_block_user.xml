@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/darkThree"
+    android:padding="17dp"
+    android:gravity="center|start">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_facebook_new_contact_2x"/>
+
+    <TextView
+        android:fontFamily="@font/roboto_medium"
+        android:id="@+id/tvUsername"
+        android:layout_marginStart="14dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCancelBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/watermelon"
+        app:cardCornerRadius="18dp">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bỏ chặn"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+/>    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_tab"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:layout_gravity="bottom"
+    android:background="@color/dark"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/ic_live_tablayout"
+            android:backgroundTint="@color/blueyGrey"/>
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:text="Live"
+            android:textColor="@color/blueyGrey"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="19dp"
+            android:layout_height="13dp"
+            android:background="@drawable/ic_view_tablayout"
+            android:backgroundTint="@color/blueyGrey"/>
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:text="Tăng mắt view"
+            android:textColor="@color/blueyGrey"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:background="@drawable/ic_contact_tablayout"
+            android:backgroundTint="@color/blueyGrey"/>
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:text="Liên hệ"
+            android:textColor="@color/blueyGrey"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon4"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:backgroundTint="@color/blueyGrey"/>
+
+        <TextView
+            android:id="@+id/tv_title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:text="Cá nhân"
+            android:textColor="@color/blueyGrey"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>

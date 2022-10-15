@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkThree"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/darkThree"
+        android:gravity="center|start">
+        <LinearLayout
+            android:id="@+id/llBackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_back_arrow"/>
+        </LinearLayout>
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Báo cáo nội dung livestream"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blueyGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng chọn một lý do"
+        android:textColor="@color/blueyGrey"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginStart="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGroupOfCategories"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbBtn0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Bạo lực"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginVertical="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blueyGrey"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Quấy rối"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginVertical="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blueyGrey"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Ảnh khỏa thân"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginVertical="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blueyGrey"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Nội dung nhạy cảm"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginVertical="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blueyGrey"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Khác"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginVertical="10dp"/>
+        <EditText
+            android:id="@+id/etWriteReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lý do..."
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/blueyGrey"
+            android:background="@drawable/bgr_border_4"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:visibility="gone"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSendReport"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi báo cáo"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/bgr_border_4_watermelon"/>
+
+</LinearLayout>

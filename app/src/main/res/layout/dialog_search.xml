@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkThree"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/darkThree"
+        android:gravity="center|start">
+        <TextView
+            android:id="@+id/tvBackButton"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tìm kiếm"
+                android:inputType="text"
+                android:drawableEnd="@drawable/ic_baseline_clear_24"
+                android:textColorHint="@color/blueyGrey"
+                android:backgroundTint="@color/darkThree"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/ic_baseline_search_24" />
+            <View
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueyGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSearchShop"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="  Tìm shop"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_search_results_text"
+        android:layout_marginHorizontal="20dp"
+        tools:itemCount="2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_search_results_shop"
+        android:layout_marginHorizontal="20dp"
+        tools:itemCount="2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_broadcast"
+        android:layout_marginHorizontal="10dp"
+        tools:itemCount="2"/>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="600dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/bgr_bottom_sheet_dialog_corner">
+
+    <LinearLayout
+        android:id="@+id/llTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Bình luận (870)"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <TextView
+            android:id="@+id/tvCloseButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_baseline_close_24"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blueyGrey"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCommentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_comment_2"/>
+
+    <LinearLayout
+        android:id="@+id/llCommentPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="7dp"
+        android:background="@color/dark"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatar"
+            android:src="@drawable/ic_socical_fb"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/etWriteComment"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Viết bình luận..."
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/blueyGrey"
+            android:background="@drawable/bgr_border_16_black"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/llPostCommentButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:background="@drawable/bgr_border_16_watermelon">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_contact_tablayout"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

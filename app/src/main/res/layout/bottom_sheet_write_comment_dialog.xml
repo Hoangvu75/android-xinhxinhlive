@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:id="@+id/llOfWriteComment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="7dp"
+        android:background="@color/dark"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatar"
+            android:src="@drawable/ic_socical_fb"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/etWriteComment"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Viết bình luận..."
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/blueyGrey"
+            android:background="@drawable/bgr_border_16_black"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/llPostCommentButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:background="@drawable/bgr_border_16_watermelon">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_contact_tablayout"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

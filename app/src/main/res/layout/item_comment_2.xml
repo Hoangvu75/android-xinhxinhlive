@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginStart="9dp"
+    android:layout_marginEnd="9dp"
+    android:layout_marginVertical="2dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp"
+    android:background="@color/darkThree">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civAvatar"
+        android:src="@drawable/ic_socical_fb"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_marginStart="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:maxWidth="120dp"
+                android:layout_height="wrap_content"
+                android:text="Tên người dùng Tên người dùng Tên người dùng"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="12/12/2012 12:12:12"
+                android:textSize="11sp"
+                android:textColor="#ECECEC"
+                android:fontFamily="@font/roboto_regular"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCommentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Bình luận "
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+
+</LinearLayout>
